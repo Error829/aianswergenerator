@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Answer Generator | Generate Precise AI Answers Instantly</title>
+    <meta name="description" content="AI Answer Generator - Create clear, accurate, and structured answers to any question with just one click. Fast, reliable, and easy to use.">
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="AI Answer Generator | Generate Precise AI Answers Instantly">
+    <meta property="og:description" content="AI Answer Generator - Create clear, accurate, and structured answers to any question with just one click. Fast, reliable, and easy to use.">
+    <meta property="og:type" content="website">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://aianswergenerator.info">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Tailwind Config -->
+    <script src="tailwind.config.js"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Marked.js for Markdown rendering -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Highlight.js for code syntax highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.8.0/styles/github.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.8.0/lib/highlight.min.js"></script>
+</head>
+<body class="antialiased bg-[#f5f5f7] text-[#1d1d1f] min-h-screen flex flex-col relative">
+    <!-- Background Gradient Circles -->
+    <div class="gradient-circle fixed top-[-20%] left-[-10%] opacity-50"></div>
+    <div class="gradient-circle fixed bottom-[-30%] right-[-20%] opacity-60"></div>
+    
+    <div class="backdrop fixed inset-0 backdrop-blur-[80px] z-0"></div>
+    
+    <!-- Navigation Bar -->
+    <header class="relative z-10 w-full bg-white/10 backdrop-blur-md border-b border-white/20">
+        <div class="container mx-auto px-6 py-4">
+            <nav class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="ai-icon-small mr-3">
+                        <i class="fa-solid fa-robot text-white text-sm"></i>
+                    </div>
+                    <a href="/" class="font-semibold text-xl text-primary">AI Answer Generator</a>
+                </div>
+                
+                <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                    <a href="#hero" class="hover:text-[#007AFF] transition-colors">Home</a>
+                    <a href="#generator-tool" class="hover:text-[#007AFF] transition-colors">Generator</a>
+                    <a href="#how-to-guide" class="hover:text-[#007AFF] transition-colors">How-To Guide</a>
+                    <a href="#use-cases" class="hover:text-[#007AFF] transition-colors">Use Cases</a>
+                    <a href="#features-advantages" class="hover:text-[#007AFF] transition-colors">Features</a>
+                    <a href="#why-choose-us" class="hover:text-[#007AFF] transition-colors">Why Choose Us</a>
+                    <a href="#faq" class="hover:text-[#007AFF] transition-colors">FAQ</a>
+                </div>
+                
+                <div class="md:hidden">
+                    <button type="button" class="text-[#1d1d1f] hover:text-primary transition-colors" aria-label="Menu">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="flex-grow">
+        <div class="container relative z-10 mx-auto px-6 py-12 md:py-16 max-w-4xl">
+            <section id="hero" class="mb-16">
+                <div class="text-center mb-14">
+                    <h1 class="text-gradient text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight mb-4">
+                        AI Answer Generator
+                    </h1>
+                    <h2 class="text-2xl md:text-3xl font-normal mb-4">Generate Smart Answers With One Click</h2>
+                    <p class="text-[#86868b] text-base md:text-lg max-w-2xl mx-auto">
+                        Professional AI answer generator tool that delivers clear, accurate, and well-structured responses to any question without complex setup
+                    </p>
+                </div>
+            </section>
+            
+            <section id="generator-tool" aria-labelledby="tool-heading">
+                <h3 id="tool-heading" class="sr-only">AI Answer Generator Tool</h3>
+                <div class="bg-white bg-opacity-90 backdrop-blur-md rounded-xl shadow-apple p-6 md:p-10 border border-white/30">
+                    <div class="mb-6">
+                        <label for="question-input" class="block text-[#1d1d1f] font-medium text-lg mb-3 flex items-center">
+                            <i class="fa-solid fa-circle-question text-primary mr-2"></i>
+                            Enter your question
+                        </label>
+                        <div class="relative">
+                            <textarea 
+                                id="question-input" 
+                                class="w-full h-32 px-5 py-4 text-base border border-[#d2d2d7] rounded-lg focus:outline-none focus:ring-4 focus:ring-primary/20 focus:border-primary transition-all resize-none"
+                                placeholder="Example: What is artificial intelligence? How to write an effective business plan? ..."
+                                aria-describedby="input-description"
+                            ></textarea>
+                            <div class="absolute right-3 bottom-3 text-[#86868b]">
+                                <i class="fa-solid fa-keyboard opacity-60"></i>
+                            </div>
+                        </div>
+                        <p id="input-description" class="sr-only">Type your question here to get an AI-generated answer</p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row items-center gap-4">
+                        <button class="btn-primary w-full sm:w-auto flex items-center justify-center">
+                            <i class="fa-solid fa-bolt mr-2"></i> Generate AI Answer
+                        </button>
+                        <a href="#examples" class="text-primary font-normal hover:underline text-base transition-all flex items-center">
+                            <i class="fa-solid fa-eye mr-1"></i> View Examples <i class="fa-solid fa-arrow-right ml-1 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- How-To Guide Section -->
+            <section id="how-to-guide" class="py-16 relative overflow-hidden">
+                <!-- 背景装饰 -->
+                <div class="absolute inset-0 bg-gradient-to-b from-[#f5f5f7] to-[#f8f8fa] z-0"></div>
+                <div class="absolute top-32 left-10 w-4 h-4 rounded-full bg-[#007AFF]/10 z-0"></div>
+                <div class="absolute top-64 right-20 w-6 h-6 rounded-full bg-[#007AFF]/20 z-0"></div>
+                <div class="absolute bottom-20 left-1/3 w-5 h-5 rounded-full bg-[#007AFF]/15 z-0"></div>
+                
+                <div class="container mx-auto px-6 relative z-10">
+                    <div class="text-center mb-16">
+                        <span class="inline-block text-[#007AFF] text-sm font-medium tracking-wide mb-3">HOW-TO GUIDE</span>
+                        <h2 class="text-3xl font-semibold mb-4">How To Use the AI Answer Generator</h2>
+                        <p class="text-lg text-[#6e6e73] max-w-2xl mx-auto">
+                            Follow these simple steps to get accurate and well-structured answers to your questions.
+                        </p>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-3 gap-10 mt-12 relative">
+                        <!-- 连接线 - 仅在中等及以上屏幕显示 -->
+                        <div class="hidden md:flex absolute top-[80px] left-0 right-0 z-0 justify-center items-center">
+                            <div class="h-[2px] w-[30%] bg-gradient-to-r from-transparent to-[#007AFF] rounded-full"></div>
+                            <div class="mx-1">
+                                <div class="w-3 h-3 rounded-full bg-[#007AFF] shadow-sm"></div>
+                            </div>
+                            <div class="h-[2px] w-[30%] bg-gradient-to-l from-transparent to-[#007AFF] rounded-full"></div>
+                        </div>
+                        
+                        <!-- Step 1 -->
+                        <div class="bg-white/90 rounded-xl p-8 shadow-sm border border-[#d2d2d7] flex flex-col items-center text-center transition-all hover:shadow-md hover:translate-y-[-5px] duration-300 relative z-10">
+                            <div class="w-20 h-20 mb-6 flex items-center justify-center bg-[#007AFF]/10 rounded-full relative">
+                                <div class="absolute -top-3 -right-3 flex items-center justify-center w-8 h-8 rounded-full bg-[#007AFF] text-white shadow-md">
+                                    <span class="font-bold">1</span>
+                                </div>
+                                <i class="fa-solid fa-circle-question text-[#007AFF] text-3xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-4">Enter Your Question</h3>
+                            <p class="text-[#424245]">
+                                Type your question in the input field. Be specific to get the most relevant answer. 
+                                The AI works best with clear, well-formed questions.
+                            </p>
+                            <div class="mt-6 w-full bg-[#f5f5f7] rounded-lg p-3 text-sm text-[#6e6e73]">
+                                <i class="fa-solid fa-lightbulb text-[#007AFF] mr-2"></i>
+                                <span>Tip: Include any specific context or requirements in your question</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2 -->
+                        <div class="bg-white/90 rounded-xl p-8 shadow-sm border border-[#d2d2d7] flex flex-col items-center text-center transition-all hover:shadow-md hover:translate-y-[-5px] duration-300 relative z-10">
+                            <div class="w-20 h-20 mb-6 flex items-center justify-center bg-[#007AFF]/10 rounded-full relative">
+                                <div class="absolute -top-3 -right-3 flex items-center justify-center w-8 h-8 rounded-full bg-[#007AFF] text-white shadow-md">
+                                    <span class="font-bold">2</span>
+                                </div>
+                                <i class="fa-solid fa-bolt-lightning text-[#007AFF] text-3xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-4">Generate the Answer</h3>
+                            <p class="text-[#424245]">
+                                Click the "Generate AI Answer" button or press Enter. 
+                                The system will process your question and create a comprehensive response.
+                            </p>
+                            <div class="mt-6 w-full bg-[#f5f5f7] rounded-lg p-3 text-sm text-[#6e6e73]">
+                                <i class="fa-solid fa-lightbulb text-[#007AFF] mr-2"></i>
+                                <span>Tip: Watch the response build in real-time with our streaming technology</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 3 -->
+                        <div class="bg-white/90 rounded-xl p-8 shadow-sm border border-[#d2d2d7] flex flex-col items-center text-center transition-all hover:shadow-md hover:translate-y-[-5px] duration-300 relative z-10">
+                            <div class="w-20 h-20 mb-6 flex items-center justify-center bg-[#007AFF]/10 rounded-full relative">
+                                <div class="absolute -top-3 -right-3 flex items-center justify-center w-8 h-8 rounded-full bg-[#007AFF] text-white shadow-md">
+                                    <span class="font-bold">3</span>
+                                </div>
+                                <i class="fa-solid fa-clipboard-check text-[#007AFF] text-3xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-4">Review Your Answer</h3>
+                            <p class="text-[#424245]">
+                                The answer appears in a clean knowledge card format with helpful formatting. 
+                                You can toggle between knowledge card and plain text views.
+                            </p>
+                            <div class="mt-6 w-full bg-[#f5f5f7] rounded-lg p-3 text-sm text-[#6e6e73]">
+                                <i class="fa-solid fa-lightbulb text-[#007AFF] mr-2"></i>
+                                <span>Tip: Click "View as Plain Text" if you need to copy the content easily</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tips Section -->
+                    <div class="mt-20 bg-white/90 rounded-xl p-8 border border-[#d2d2d7] shadow-sm relative overflow-hidden">
+                        <!-- 背景装饰 -->
+                        <div class="absolute top-0 right-0 w-40 h-40 bg-gradient-to-bl from-[#007AFF]/5 to-transparent rounded-bl-[100px] z-0"></div>
+                        <div class="absolute bottom-0 left-0 w-40 h-40 bg-gradient-to-tr from-[#007AFF]/5 to-transparent rounded-tr-[100px] z-0"></div>
+                        
+                        <div class="relative z-10">
+                            <div class="flex items-center mb-8">
+                                <div class="w-12 h-12 bg-[#007AFF]/10 rounded-xl flex items-center justify-center shadow-sm">
+                                    <i class="fa-solid fa-lightbulb text-[#007AFF] text-xl"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-2xl font-semibold">Tips for Better Results</h4>
+                                    <p class="text-[#6e6e73] text-sm">Follow these suggestions to get the most out of the AI Answer Generator</p>
+                                </div>
+                            </div>
+                            
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="flex items-start p-5 bg-[#f8f8fa] rounded-xl hover:shadow-sm transition-all group hover:bg-gradient-to-br hover:from-[#f8f8fa] hover:to-[#f1f5fe]">
+                                    <div class="mt-1 mr-4 w-10 h-10 rounded-xl bg-[#007AFF]/15 flex items-center justify-center flex-shrink-0 shadow-sm group-hover:bg-[#007AFF]/20">
+                                        <i class="fa-solid fa-bullseye text-[#007AFF]"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-semibold text-[#1d1d1f] mb-2 group-hover:text-[#007AFF] transition-colors">Be specific</h5>
+                                        <p class="text-[#424245]">Include relevant context and details in your question. The more specific you are, the more tailored your answer will be.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start p-5 bg-[#f8f8fa] rounded-xl hover:shadow-sm transition-all group hover:bg-gradient-to-br hover:from-[#f8f8fa] hover:to-[#f1f5fe]">
+                                    <div class="mt-1 mr-4 w-10 h-10 rounded-xl bg-[#007AFF]/15 flex items-center justify-center flex-shrink-0 shadow-sm group-hover:bg-[#007AFF]/20">
+                                        <i class="fa-solid fa-layer-group text-[#007AFF]"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-semibold text-[#1d1d1f] mb-2 group-hover:text-[#007AFF] transition-colors">Ask one thing at a time</h5>
+                                        <p class="text-[#424245]">Complex questions work better when broken down into individual parts. This helps the AI focus on providing precise answers.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start p-5 bg-[#f8f8fa] rounded-xl hover:shadow-sm transition-all group hover:bg-gradient-to-br hover:from-[#f8f8fa] hover:to-[#f1f5fe]">
+                                    <div class="mt-1 mr-4 w-10 h-10 rounded-xl bg-[#007AFF]/15 flex items-center justify-center flex-shrink-0 shadow-sm group-hover:bg-[#007AFF]/20">
+                                        <i class="fa-solid fa-rotate text-[#007AFF]"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-semibold text-[#1d1d1f] mb-2 group-hover:text-[#007AFF] transition-colors">Refine as needed</h5>
+                                        <p class="text-[#424245]">Follow up with more questions to get additional details. Use the first answer as a foundation and build on it with follow-up queries.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start p-5 bg-[#f8f8fa] rounded-xl hover:shadow-sm transition-all group hover:bg-gradient-to-br hover:from-[#f8f8fa] hover:to-[#f1f5fe]">
+                                    <div class="mt-1 mr-4 w-10 h-10 rounded-xl bg-[#007AFF]/15 flex items-center justify-center flex-shrink-0 shadow-sm group-hover:bg-[#007AFF]/20">
+                                        <i class="fa-solid fa-table-columns text-[#007AFF]"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-semibold text-[#1d1d1f] mb-2 group-hover:text-[#007AFF] transition-colors">Format matters</h5>
+                                        <p class="text-[#424245]">If you need specific formatting, mention it in your question. Our AI can adapt to your needs for lists, tables, code blocks, and more.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-10 flex justify-center">
+                                <a href="#generator-tool" class="btn-secondary inline-flex items-center relative overflow-hidden group">
+                                    <span class="relative z-10">
+                                        <i class="fa-solid fa-arrow-up mr-2"></i> Try it now
+                                    </span>
+                                    <span class="absolute inset-0 bg-gradient-to-r from-[#007AFF]/80 to-[#007AFF] opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Use Case Section -->
+            <section id="use-cases" class="py-16">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-semibold mb-4">For researchers, creators, students, <br>and everyone in between</h2>
+                    <p class="text-lg text-[#6e6e73] max-w-2xl mx-auto">
+                        See how AI Answer Generator can help in different scenarios
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Academic Research -->
+                    <div class="bg-[#f9f9f9] rounded-xl p-8 shadow-sm transition-all hover:shadow-md group">
+                        <h3 class="text-2xl font-semibold mb-3">Academic Research</h3>
+                        <p class="text-[#424245] mb-6 min-h-[120px]">
+                            Quickly retrieve answers to specific information queries. Save time on literature reviews by generating 
+                            well-structured summaries and identifying key concepts in complex academic topics.
+                        </p>
+                        <a href="#generator-tool" class="text-[#946800] font-medium group-hover:underline inline-flex items-center">
+                            See how researchers use AI Answer Generator <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                        <div class="mt-8 flex items-center justify-center">
+                            <div class="relative flex items-center">
+                                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center border border-[#e5e5e5] shadow-sm z-30">
+                                    <i class="fa-solid fa-microscope text-3xl text-[#007AFF]"></i>
+                                </div>
+                                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center border border-[#e5e5e5] shadow-sm -ml-4 z-20">
+                                    <i class="fa-solid fa-graduation-cap text-3xl text-[#6e6e73]"></i>
+                                </div>
+                                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center border border-[#e5e5e5] shadow-sm -ml-4 z-10">
+                                    <i class="fa-solid fa-book-open text-3xl text-[#6e6e73]"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Content Creation -->
+                    <div class="bg-[#f9f9f9] rounded-xl p-8 shadow-sm transition-all hover:shadow-md group">
+                        <h3 class="text-2xl font-semibold mb-3">Content Creation</h3>
+                        <p class="text-[#424245] mb-6 min-h-[120px]">
+                            Effortlessly generate well-structured, visually appealing knowledge cards for articles, 
+                            social media posts, or presentations. Transform rough notes into polished content with 
+                            proper formatting.
+                        </p>
+                        <a href="#generator-tool" class="text-[#946800] font-medium group-hover:underline inline-flex items-center">
+                            See how creators use AI Answer Generator <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                        <div class="mt-8 flex items-center justify-center">
+                            <div class="relative flex items-center">
+                                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center border border-[#e5e5e5] shadow-sm z-30">
+                                    <i class="fa-solid fa-pen-fancy text-3xl text-[#007AFF]"></i>
+                                </div>
+                                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center border border-[#e5e5e5] shadow-sm -ml-4 z-20">
+                                    <i class="fa-solid fa-camera text-3xl text-[#6e6e73]"></i>
+                                </div>
+                                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center border border-[#e5e5e5] shadow-sm -ml-4 z-10">
+                                    <i class="fa-solid fa-palette text-3xl text-[#6e6e73]"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Knowledge Learning -->
+                    <div class="bg-[#f9f9f9] rounded-xl p-8 shadow-sm transition-all hover:shadow-md group">
+                        <h3 class="text-2xl font-semibold mb-3">Knowledge Learning</h3>
+                        <p class="text-[#424245] mb-6 min-h-[120px]">
+                            Generate concise learning cards that capture key concepts. Track your learning progress 
+                            in real-time and create easy-to-review summaries that make studying and revision more 
+                            efficient.
+                        </p>
+                        <a href="#generator-tool" class="text-[#946800] font-medium group-hover:underline inline-flex items-center">
+                            See how students use AI Answer Generator <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                        <div class="mt-8 flex items-center justify-center">
+                            <div class="relative flex items-center">
+                                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center border border-[#e5e5e5] shadow-sm z-30">
+                                    <i class="fa-solid fa-lightbulb text-3xl text-[#007AFF]"></i>
+                                </div>
+                                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center border border-[#e5e5e5] shadow-sm -ml-4 z-20">
+                                    <i class="fa-solid fa-brain text-3xl text-[#6e6e73]"></i>
+                                </div>
+                                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center border border-[#e5e5e5] shadow-sm -ml-4 z-10">
+                                    <i class="fa-solid fa-chart-line text-3xl text-[#6e6e73]"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Professional Work -->
+                    <div class="bg-[#f9f9f9] rounded-xl p-8 shadow-sm transition-all hover:shadow-md group">
+                        <h3 class="text-2xl font-semibold mb-3">Professional Work</h3>
+                        <p class="text-[#424245] mb-6 min-h-[120px]">
+                            Prepare well-structured presentations and speech notes with optimized content. 
+                            Generate comprehensive reports and documentation that communicate complex ideas 
+                            clearly and professionally.
+                        </p>
+                        <a href="#generator-tool" class="text-[#946800] font-medium group-hover:underline inline-flex items-center">
+                            See how professionals use AI Answer Generator <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                        <div class="mt-8 flex items-center justify-center">
+                            <div class="relative flex items-center">
+                                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center border border-[#e5e5e5] shadow-sm z-30">
+                                    <i class="fa-solid fa-briefcase text-3xl text-[#007AFF]"></i>
+                                </div>
+                                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center border border-[#e5e5e5] shadow-sm -ml-4 z-20">
+                                    <i class="fa-solid fa-chart-line text-3xl text-[#6e6e73]"></i>
+                                </div>
+                                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center border border-[#e5e5e5] shadow-sm -ml-4 z-10">
+                                    <i class="fa-solid fa-file-alt text-3xl text-[#6e6e73]"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Product Features Section -->
+            <section id="features-advantages" class="py-16">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-semibold mb-4">Product Features & Advantages</h2>
+                    <p class="text-lg text-[#6e6e73] max-w-2xl mx-auto">
+                        Discover what makes our AI Answer Generator stand out from the rest
+                    </p>
+                </div>
+                
+                <!-- Feature 1: Structured Output -->
+                <div class="flex flex-col md:flex-row items-center gap-8 mb-24">
+                    <div class="w-full md:w-1/2 order-2 md:order-1">
+                        <h3 class="text-2xl font-semibold mb-4">Structured Knowledge Output</h3>
+                        <p class="text-[#424245] mb-6">
+                            A picture may be worth a thousand words, but structure is worth a thousand scattered thoughts. 
+                            Our AI organizes responses with clear headings, logical flow, and proper formatting.
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-[#007AFF] mt-1 mr-3"></i>
+                                <span class="text-[#424245]">Automatic headings and subheadings for complex topics</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-[#007AFF] mt-1 mr-3"></i>
+                                <span class="text-[#424245]">Beautiful knowledge cards with visual hierarchy</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-[#007AFF] mt-1 mr-3"></i>
+                                <span class="text-[#424245]">Code formatting with syntax highlighting when needed</span>
+                            </li>
+                        </ul>
+                        <div class="mt-6">
+                            <a href="#generator-tool" class="btn-secondary inline-flex items-center">
+                                Try structured answers <i class="fa-solid fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 order-1 md:order-2">
+                        <div class="relative bg-gradient-to-br from-[#f2f7ff] to-[#eef6ff] p-6 rounded-2xl border border-[#e5e5e5] shadow-sm">
+                            <div class="absolute -top-3 -left-3 bg-[#007AFF] text-white text-xs font-medium py-1 px-3 rounded-full">
+                                FEATURE
+                            </div>
+                            <div class="bg-white rounded-lg p-5 shadow-sm border border-[#e5e5e5]">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-8 h-8 bg-[#007AFF]/10 rounded-full flex items-center justify-center">
+                                        <i class="fa-solid fa-layer-group text-[#007AFF]"></i>
+                                    </div>
+                                    <div class="ml-3">
+                                        <h4 class="font-semibold text-[#1d1d1f]">Structured Output Example</h4>
+                                    </div>
+                                </div>
+                                <div class="space-y-4">
+                                    <div>
+                                        <h5 class="text-sm font-medium text-[#1d1d1f] border-l-2 border-[#007AFF] pl-2">Main Topic</h5>
+                                        <p class="text-xs text-[#424245] mt-1">Clear explanation of the main concept with precise details.</p>
+                                    </div>
+                                    <div>
+                                        <h5 class="text-sm font-medium text-[#1d1d1f] border-l-2 border-[#007AFF] pl-2">Key Components</h5>
+                                        <ul class="text-xs text-[#424245] mt-1 list-disc pl-5 space-y-1">
+                                            <li>First important element with explanation</li>
+                                            <li>Second critical aspect with details</li>
+                                            <li>Third relevant point with clarification</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h5 class="text-sm font-medium text-[#1d1d1f] border-l-2 border-[#007AFF] pl-2">Practical Applications</h5>
+                                        <p class="text-xs text-[#424245] mt-1">Overview of how this can be applied in real-world scenarios.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Feature 2: Multilingual Support -->
+                <div class="flex flex-col md:flex-row items-center gap-8 mb-24">
+                    <div class="w-full md:w-1/2">
+                        <div class="relative bg-gradient-to-br from-[#f9f9fa] to-[#f5f5f7] p-6 rounded-2xl border border-[#e5e5e5] shadow-sm">
+                            <div class="absolute -top-3 -left-3 bg-[#007AFF] text-white text-xs font-medium py-1 px-3 rounded-full">
+                                FEATURE
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-white rounded-lg p-4 shadow-sm border border-[#e5e5e5]">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="flex items-center">
+                                            <span class="text-xs font-semibold text-[#1d1d1f]">English</span>
+                                        </div>
+                                        <div class="text-[#007AFF]">
+                                            <i class="fa-solid fa-language text-sm"></i>
+                                        </div>
+                                    </div>
+                                    <p class="text-xs text-[#424245]">Clear, accurate answers in fluent English.</p>
+                                </div>
+                                <div class="bg-white rounded-lg p-4 shadow-sm border border-[#e5e5e5]">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="flex items-center">
+                                            <span class="text-xs font-semibold text-[#1d1d1f]">中文</span>
+                                        </div>
+                                        <div class="text-[#007AFF]">
+                                            <i class="fa-solid fa-language text-sm"></i>
+                                        </div>
+                                    </div>
+                                    <p class="text-xs text-[#424245]">提供流畅自然的中文回答。</p>
+                                </div>
+                                <div class="bg-white rounded-lg p-4 shadow-sm border border-[#e5e5e5]">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="flex items-center">
+                                            <span class="text-xs font-semibold text-[#1d1d1f]">Español</span>
+                                        </div>
+                                        <div class="text-[#007AFF]">
+                                            <i class="fa-solid fa-language text-sm"></i>
+                                        </div>
+                                    </div>
+                                    <p class="text-xs text-[#424245]">Respuestas claras y precisas en español.</p>
+                                </div>
+                                <div class="bg-white rounded-lg p-4 shadow-sm border border-[#e5e5e5]">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="flex items-center">
+                                            <span class="text-xs font-semibold text-[#1d1d1f]">日本語</span>
+                                        </div>
+                                        <div class="text-[#007AFF]">
+                                            <i class="fa-solid fa-language text-sm"></i>
+                                        </div>
+                                    </div>
+                                    <p class="text-xs text-[#424245]">自然な日本語での明確な回答。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <h3 class="text-2xl font-semibold mb-4">Multilingual Support</h3>
+                        <p class="text-[#424245] mb-6">
+                            Break down language barriers with our AI that speaks your language. Get answers in multiple 
+                            languages with the same high quality and precise formatting.
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-[#007AFF] mt-1 mr-3"></i>
+                                <span class="text-[#424245]">Support for major global languages</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-[#007AFF] mt-1 mr-3"></i>
+                                <span class="text-[#424245]">Natural, fluent responses that sound human-written</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-[#007AFF] mt-1 mr-3"></i>
+                                <span class="text-[#424245]">Culturally appropriate responses for each language</span>
+                            </li>
+                        </ul>
+                        <div class="mt-6">
+                            <a href="#generator-tool" class="btn-secondary inline-flex items-center">
+                                Try multilingual answers <i class="fa-solid fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Feature 3: Multi-Angle Analysis -->
+                <div class="flex flex-col md:flex-row items-center gap-8 mb-24">
+                    <div class="w-full md:w-1/2 order-2 md:order-1">
+                        <h3 class="text-2xl font-semibold mb-4">Multi-Angle Analysis</h3>
+                        <p class="text-[#424245] mb-6">
+                            See the complete picture with comprehensive analysis from multiple perspectives. Our AI 
+                            presents balanced viewpoints, helping you understand complex topics holistically.
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-[#007AFF] mt-1 mr-3"></i>
+                                <span class="text-[#424245]">Balanced presentation of different viewpoints</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-[#007AFF] mt-1 mr-3"></i>
+                                <span class="text-[#424245]">Consideration of historical, social, and technical contexts</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-[#007AFF] mt-1 mr-3"></i>
+                                <span class="text-[#424245]">Identification of connections between related concepts</span>
+                            </li>
+                        </ul>
+                        <div class="mt-6">
+                            <a href="#generator-tool" class="btn-secondary inline-flex items-center">
+                                Try multi-angle analysis <i class="fa-solid fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 order-1 md:order-2">
+                        <div class="relative bg-gradient-to-br from-[#f2f7ff] to-[#eef6ff] p-6 rounded-2xl border border-[#e5e5e5] shadow-sm">
+                            <div class="absolute -top-3 -left-3 bg-[#007AFF] text-white text-xs font-medium py-1 px-3 rounded-full">
+                                FEATURE
+                            </div>
+                            <div class="bg-white rounded-lg shadow-sm border border-[#e5e5e5] overflow-hidden">
+                                <div class="p-4 border-b border-[#e5e5e5] bg-[#f9f9fa]">
+                                    <div class="flex items-center">
+                                        <div class="w-8 h-8 bg-[#007AFF]/10 rounded-full flex items-center justify-center">
+                                            <i class="fa-solid fa-glasses text-[#007AFF]"></i>
+                                        </div>
+                                        <div class="ml-3">
+                                            <h4 class="font-semibold text-[#1d1d1f]">Multiple Perspectives</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4">
+                                    <div class="space-y-3">
+                                        <div class="flex items-start p-2 bg-[#f5f5f7] rounded">
+                                            <div class="mt-1 mr-2 text-[#007AFF]">
+                                                <i class="fa-solid fa-circle-info"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="text-xs font-semibold text-[#1d1d1f]">Historical Context</h5>
+                                                <p class="text-xs text-[#424245]">Understanding the development over time...</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-start p-2 bg-[#f5f5f7] rounded">
+                                            <div class="mt-1 mr-2 text-[#007AFF]">
+                                                <i class="fa-solid fa-scale-balanced"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="text-xs font-semibold text-[#1d1d1f]">Balanced Viewpoint</h5>
+                                                <p class="text-xs text-[#424245]">Considering different sides of the argument...</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-start p-2 bg-[#f5f5f7] rounded">
+                                            <div class="mt-1 mr-2 text-[#007AFF]">
+                                                <i class="fa-solid fa-code"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="text-xs font-semibold text-[#1d1d1f]">Technical Analysis</h5>
+                                                <p class="text-xs text-[#424245]">Examining the technical implementation...</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Feature 4: Powerful Model -->
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="w-full md:w-1/2">
+                        <div class="relative bg-gradient-to-br from-[#f9f9fa] to-[#f5f5f7] p-6 rounded-2xl border border-[#e5e5e5] shadow-sm">
+                            <div class="absolute -top-3 -left-3 bg-[#007AFF] text-white text-xs font-medium py-1 px-3 rounded-full">
+                                FEATURE
+                            </div>
+                            <div class="bg-white rounded-lg p-5 shadow-sm border border-[#e5e5e5]">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-8 h-8 bg-[#007AFF]/10 rounded-full flex items-center justify-center">
+                                        <i class="fa-solid fa-microchip text-[#007AFF]"></i>
+                                    </div>
+                                    <div class="ml-3">
+                                        <h4 class="font-semibold text-[#1d1d1f]">DeepSeek Chat v3</h4>
+                                        <p class="text-xs text-[#6e6e73]">Latest generation AI model</p>
+                                    </div>
+                                </div>
+                                <div class="space-y-3">
+                                    <div class="flex items-center">
+                                        <div class="w-20 text-xs font-medium text-[#424245]">Reasoning</div>
+                                        <div class="flex-1 bg-gray-200 rounded-full h-2">
+                                            <div class="bg-[#007AFF] h-2 rounded-full" style="width: 95%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div class="w-20 text-xs font-medium text-[#424245]">Coding</div>
+                                        <div class="flex-1 bg-gray-200 rounded-full h-2">
+                                            <div class="bg-[#007AFF] h-2 rounded-full" style="width: 98%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div class="w-20 text-xs font-medium text-[#424245]">Accuracy</div>
+                                        <div class="flex-1 bg-gray-200 rounded-full h-2">
+                                            <div class="bg-[#007AFF] h-2 rounded-full" style="width: 92%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div class="w-20 text-xs font-medium text-[#424245]">Speed</div>
+                                        <div class="flex-1 bg-gray-200 rounded-full h-2">
+                                            <div class="bg-[#007AFF] h-2 rounded-full" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-4 text-center">
+                                    <span class="inline-block bg-[#007AFF]/10 text-[#007AFF] text-xs font-medium px-3 py-1 rounded-full">
+                                        Streaming Enabled
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <h3 class="text-2xl font-semibold mb-4">Powered by DeepSeek v3</h3>
+                        <p class="text-[#424245] mb-6">
+                            Experience the capabilities of one of the most advanced AI models available. DeepSeek Chat v3 
+                            delivers exceptional reasoning and problem-solving with particular strength in technical domains.
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-[#007AFF] mt-1 mr-3"></i>
+                                <span class="text-[#424245]">State-of-the-art reasoning capabilities</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-[#007AFF] mt-1 mr-3"></i>
+                                <span class="text-[#424245]">Exceptional coding abilities for programming tasks</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-[#007AFF] mt-1 mr-3"></i>
+                                <span class="text-[#424245]">Fast, real-time responses with streaming output</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-[#007AFF] mt-1 mr-3"></i>
+                                <span class="text-[#424245]">Constantly updated to improve accuracy and capabilities</span>
+                            </li>
+                        </ul>
+                        <div class="mt-6">
+                            <a href="#generator-tool" class="btn-secondary inline-flex items-center">
+                                Experience DeepSeek v3 <i class="fa-solid fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Why Choose Us Section -->
+            <section id="why-choose-us" class="py-20 relative overflow-hidden">
+                <!-- Layered Background Structure -->
+                <div class="absolute inset-0 bg-gradient-to-b from-[#f8f8fa] to-[#f5f5f7] z-0"></div>
+                <div class="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-white to-transparent z-0"></div>
+                <div class="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-white to-transparent z-0"></div>
+                <div class="absolute -left-64 top-1/4 w-96 h-96 rounded-full bg-[#007AFF]/5 blur-3xl z-0"></div>
+                <div class="absolute -right-64 bottom-1/4 w-96 h-96 rounded-full bg-[#007AFF]/5 blur-3xl z-0"></div>
+                
+                <div class="container mx-auto px-6 relative z-10">
+                    <div class="text-center mb-20">
+                        <span class="inline-block text-[#007AFF] text-sm font-medium tracking-wide mb-3">WHY CHOOSE US</span>
+                        <h2 class="text-4xl font-semibold mb-6">
+                            Why people choose our AI Answer Generator
+                        </h2>
+                        <p class="text-[#6e6e73] max-w-2xl mx-auto text-lg">
+                            Discover the key advantages that set our solution apart and make it the preferred choice for those seeking accurate, structured answers
+                        </p>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-x-16 gap-y-20">
+                        <!-- Reason 1 -->
+                        <div class="flex flex-col relative group">
+                            <div class="absolute -inset-4 rounded-xl bg-gradient-to-r from-[#f5f5f7] to-[#f9f9f9] shadow-sm opacity-0 group-hover:opacity-100 transition-all duration-300 z-0"></div>
+                            <div class="mb-6 relative z-10">
+                                <div class="w-16 h-16 mb-4 bg-[#f1f5fe] rounded-2xl flex items-center justify-center shadow-sm">
+                                    <i class="fa-solid fa-microchip text-[#007AFF] text-2xl"></i>
+                                </div>
+                                <h3 class="text-2xl font-semibold mb-4">
+                                    Technical Excellence
+                                </h3>
+                            </div>
+                            <p class="text-[#424245] text-lg leading-relaxed mb-4 relative z-10">
+                                Experience the power of DeepSeek Chat v3, one of the most advanced AI models available. Our solution delivers precise, accurate answers with exceptional reasoning capabilities and strong technical performance.
+                            </p>
+                            <p class="text-[#424245] text-lg leading-relaxed relative z-10">
+                                We've optimized every aspect of the system for answer generation, ensuring you get responses that are not just accurate, but truly insightful and comprehensive.
+                            </p>
+                        </div>
+                        
+                        <!-- Reason 2 -->
+                        <div class="flex flex-col relative group">
+                            <div class="absolute -inset-4 rounded-xl bg-gradient-to-r from-[#f5f5f7] to-[#f9f9f9] shadow-sm opacity-0 group-hover:opacity-100 transition-all duration-300 z-0"></div>
+                            <div class="mb-6 relative z-10">
+                                <div class="w-16 h-16 mb-4 bg-[#f1f5fe] rounded-2xl flex items-center justify-center shadow-sm">
+                                    <i class="fa-solid fa-sitemap text-[#007AFF] text-2xl"></i>
+                                </div>
+                                <h3 class="text-2xl font-semibold mb-4">
+                                    Clarity & Structure
+                                </h3>
+                            </div>
+                            <p class="text-[#424245] text-lg leading-relaxed mb-4 relative z-10">
+                                Transform complex information into clear, structured knowledge with our AI's exceptional organization capabilities. Every answer is presented with logical flow, proper headings, and visual formatting.
+                            </p>
+                            <p class="text-[#424245] text-lg leading-relaxed relative z-10">
+                                Whether you're studying, researching, or creating content, our structured outputs make information more accessible and easier to understand at a glance.
+                            </p>
+                        </div>
+                        
+                        <!-- Reason 3 -->
+                        <div class="flex flex-col relative group">
+                            <div class="absolute -inset-4 rounded-xl bg-gradient-to-r from-[#f5f5f7] to-[#f9f9f9] shadow-sm opacity-0 group-hover:opacity-100 transition-all duration-300 z-0"></div>
+                            <div class="mb-6 relative z-10">
+                                <div class="w-16 h-16 mb-4 bg-[#f1f5fe] rounded-2xl flex items-center justify-center shadow-sm">
+                                    <i class="fa-solid fa-gauge-high text-[#007AFF] text-2xl"></i>
+                                </div>
+                                <h3 class="text-2xl font-semibold mb-4">
+                                    Speed & Efficiency
+                                </h3>
+                            </div>
+                            <p class="text-[#424245] text-lg leading-relaxed mb-4 relative z-10">
+                                Save valuable time with our lightning-fast response system that delivers answers instantly. Watch as your answer builds in real-time with streaming technology, eliminating wasted waiting time.
+                            </p>
+                            <p class="text-[#424245] text-lg leading-relaxed relative z-10">
+                                With zero setup required, you can jump straight to getting answers — no complicated configurations or account creation processes standing in your way.
+                            </p>
+                        </div>
+                        
+                        <!-- Reason 4 -->
+                        <div class="flex flex-col relative group">
+                            <div class="absolute -inset-4 rounded-xl bg-gradient-to-r from-[#f5f5f7] to-[#f9f9f9] shadow-sm opacity-0 group-hover:opacity-100 transition-all duration-300 z-0"></div>
+                            <div class="mb-6 relative z-10">
+                                <div class="w-16 h-16 mb-4 bg-[#f1f5fe] rounded-2xl flex items-center justify-center shadow-sm">
+                                    <i class="fa-solid fa-globe text-[#007AFF] text-2xl"></i>
+                                </div>
+                                <h3 class="text-2xl font-semibold mb-4">
+                                    Global Perspective
+                                </h3>
+                            </div>
+                            <p class="text-[#424245] text-lg leading-relaxed mb-4 relative z-10">
+                                Access insights from multiple angles and perspectives with our multi-dimensional analysis capability. Break down language barriers with multi-language support that delivers the same high quality across different languages.
+                            </p>
+                            <p class="text-[#424245] text-lg leading-relaxed relative z-10">
+                                From diverse viewpoints to international accessibility, our AI is designed to provide a truly global knowledge experience regardless of your location or language preference.
+                            </p>
+                        </div>
+                        
+                        <!-- Reason 5 -->
+                        <div class="flex flex-col relative group">
+                            <div class="absolute -inset-4 rounded-xl bg-gradient-to-r from-[#f5f5f7] to-[#f9f9f9] shadow-sm opacity-0 group-hover:opacity-100 transition-all duration-300 z-0"></div>
+                            <div class="mb-6 relative z-10">
+                                <div class="w-16 h-16 mb-4 bg-[#f1f5fe] rounded-2xl flex items-center justify-center shadow-sm">
+                                    <i class="fa-solid fa-arrow-trend-up text-[#007AFF] text-2xl"></i>
+                                </div>
+                                <h3 class="text-2xl font-semibold mb-4">
+                                    Continuous Improvement
+                                </h3>
+                            </div>
+                            <p class="text-[#424245] text-lg leading-relaxed mb-4 relative z-10">
+                                Benefit from our commitment to ongoing enhancement. We regularly update our AI model, refine our features, and optimize performance based on the latest advances and user feedback.
+                            </p>
+                            <p class="text-[#424245] text-lg leading-relaxed relative z-10">
+                                By choosing our service, you're investing in a solution that grows more capable with each update, ensuring you always have access to cutting-edge answer generation technology.
+                            </p>
+                        </div>
+                        
+                        <!-- Reason 6 -->
+                        <div class="flex flex-col relative group">
+                            <div class="absolute -inset-4 rounded-xl bg-gradient-to-r from-[#f5f5f7] to-[#f9f9f9] shadow-sm opacity-0 group-hover:opacity-100 transition-all duration-300 z-0"></div>
+                            <div class="mb-6 relative z-10">
+                                <div class="w-16 h-16 mb-4 bg-[#f1f5fe] rounded-2xl flex items-center justify-center shadow-sm">
+                                    <i class="fa-solid fa-wand-magic-sparkles text-[#007AFF] text-2xl"></i>
+                                </div>
+                                <h3 class="text-2xl font-semibold mb-4">
+                                    Elegant Simplicity
+                                </h3>
+                            </div>
+                            <p class="text-[#424245] text-lg leading-relaxed mb-4 relative z-10">
+                                Enjoy an intuitive experience with our clean, distraction-free interface. We've eliminated unnecessary complexity so you can focus on what matters — getting the answers you need.
+                            </p>
+                            <p class="text-[#424245] text-lg leading-relaxed relative z-10">
+                                The beautiful knowledge card format makes information not just readable but visually appealing, transforming complex data into accessible insights with minimal effort.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Bottom Pattern -->
+                    <div class="flex justify-center mt-20">
+                        <div class="flex items-center gap-3">
+                            <div class="w-2 h-2 rounded-full bg-[#007AFF]/40"></div>
+                            <div class="w-3 h-3 rounded-full bg-[#007AFF]/60"></div>
+                            <div class="w-4 h-4 rounded-full bg-[#007AFF]/80"></div>
+                            <div class="w-5 h-5 rounded-full bg-[#007AFF]"></div>
+                            <div class="w-4 h-4 rounded-full bg-[#007AFF]/80"></div>
+                            <div class="w-3 h-3 rounded-full bg-[#007AFF]/60"></div>
+                            <div class="w-2 h-2 rounded-full bg-[#007AFF]/40"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- FAQ Section -->
+            <section id="faq" class="py-20 relative overflow-hidden">
+                <!-- 分层背景结构 -->
+                <div class="absolute inset-0 bg-gradient-to-b from-white to-[#f8f8fa] z-0"></div>
+                <div class="absolute -left-64 bottom-1/3 w-96 h-96 rounded-full bg-[#007AFF]/5 blur-3xl z-0"></div>
+                <div class="absolute -right-64 top-1/3 w-96 h-96 rounded-full bg-[#007AFF]/5 blur-3xl z-0"></div>
+                
+                <!-- 装饰性元素 -->
+                <div class="absolute top-16 left-10 w-3 h-3 rounded-full bg-[#007AFF]/40 z-0"></div>
+                <div class="absolute top-32 right-20 w-2 h-2 rounded-full bg-[#007AFF]/30 z-0"></div>
+                <div class="absolute bottom-24 left-1/4 w-4 h-4 rounded-full bg-[#007AFF]/20 z-0"></div>
+                <div class="absolute bottom-40 right-1/3 w-5 h-5 rounded-full bg-[#007AFF]/30 z-0"></div>
+                
+                <div class="container mx-auto px-6 relative z-10">
+                    <div class="text-center mb-16">
+                        <span class="inline-block text-[#007AFF] text-sm font-medium tracking-wide mb-3">FAQ</span>
+                        <h2 class="text-4xl font-semibold mb-6">Frequently Asked Questions</h2>
+                        <p class="text-[#6e6e73] max-w-2xl mx-auto text-lg">
+                            Get answers to common questions about our AI Answer Generator
+                        </p>
+                    </div>
+                    
+                    <div class="max-w-3xl mx-auto">
+                        <!-- FAQ 项目 1 -->
+                        <div class="mb-4 bg-white rounded-xl shadow-sm border border-[#e5e5e5] hover:shadow-md transition-all group">
+                            <button class="faq-toggle w-full text-left px-6 py-5 flex items-start justify-between" aria-expanded="false">
+                                <div class="flex items-start">
+                                    <div class="mt-1 mr-5 flex-shrink-0">
+                                        <div class="w-10 h-10 bg-[#f1f5fe] rounded-lg flex items-center justify-center shadow-sm">
+                                            <i class="fa-solid fa-magnifying-glass text-[#007AFF]"></i>
+                                        </div>
+                                    </div>
+                                    <h3 class="text-xl font-semibold group-hover:text-[#007AFF] transition-colors">
+                                        Pain Points of Manual Searching
+                                    </h3>
+                                </div>
+                                <i class="fa-solid fa-chevron-down text-[#007AFF] transform transition-transform"></i>
+                            </button>
+                            <div class="faq-content hidden px-6 pb-6 pl-[84px]">
+                                <div class="text-[#424245] space-y-3">
+                                    <p>Manual searching for information often presents several challenges:</p>
+                                    <ul class="list-disc pl-5 space-y-2">
+                                        <li>Time-consuming process of sifting through multiple sources</li>
+                                        <li>Information overload with too many unstructured results</li>
+                                        <li>Difficulty in finding concise, well-organized answers</li>
+                                        <li>Inconsistent quality and formatting of information</li>
+                                        <li>Challenge of synthesizing different viewpoints into a coherent understanding</li>
+                                    </ul>
+                                    <p>Our AI Answer Generator addresses these pain points by instantly delivering structured, comprehensive responses that save you valuable time and mental effort.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ 项目 2 -->
+                        <div class="mb-4 bg-white rounded-xl shadow-sm border border-[#e5e5e5] hover:shadow-md transition-all group">
+                            <button class="faq-toggle w-full text-left px-6 py-5 flex items-start justify-between" aria-expanded="false">
+                                <div class="flex items-start">
+                                    <div class="mt-1 mr-5 flex-shrink-0">
+                                        <div class="w-10 h-10 bg-[#f1f5fe] rounded-lg flex items-center justify-center shadow-sm">
+                                            <i class="fa-solid fa-robot text-[#007AFF]"></i>
+                                        </div>
+                                    </div>
+                                    <h3 class="text-xl font-semibold group-hover:text-[#007AFF] transition-colors">
+                                        How does the AI answer?
+                                    </h3>
+                                </div>
+                                <i class="fa-solid fa-chevron-down text-[#007AFF] transform transition-transform"></i>
+                            </button>
+                            <div class="faq-content hidden px-6 pb-6 pl-[84px]">
+                                <div class="text-[#424245] space-y-3">
+                                    <p>Our AI Answer Generator uses a sophisticated process to create high-quality responses:</p>
+                                    <ol class="list-decimal pl-5 space-y-2">
+                                        <li>It analyzes your question to understand the core intent and context</li>
+                                        <li>The DeepSeek v3 model processes the query using its advanced reasoning capabilities</li>
+                                        <li>The system generates a comprehensive, well-structured response with clear organization</li>
+                                        <li>Information is presented with appropriate headings, formatting, and visual hierarchy</li>
+                                        <li>Multiple perspectives are considered to provide a balanced, thorough answer</li>
+                                    </ol>
+                                    <p>The result is a clean, readable answer that presents information in a logical flow, making complex topics easier to understand at a glance.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ 项目 3 -->
+                        <div class="mb-4 bg-white rounded-xl shadow-sm border border-[#e5e5e5] hover:shadow-md transition-all group">
+                            <button class="faq-toggle w-full text-left px-6 py-5 flex items-start justify-between" aria-expanded="false">
+                                <div class="flex items-start">
+                                    <div class="mt-1 mr-5 flex-shrink-0">
+                                        <div class="w-10 h-10 bg-[#f1f5fe] rounded-lg flex items-center justify-center shadow-sm">
+                                            <i class="fa-solid fa-code-branch text-[#007AFF]"></i>
+                                        </div>
+                                    </div>
+                                    <h3 class="text-xl font-semibold group-hover:text-[#007AFF] transition-colors">
+                                        Can the tool handle complex or technical questions?
+                                    </h3>
+                                </div>
+                                <i class="fa-solid fa-chevron-down text-[#007AFF] transform transition-transform"></i>
+                            </button>
+                            <div class="faq-content hidden px-6 pb-6 pl-[84px]">
+                                <div class="text-[#424245] space-y-3">
+                                    <p>Yes, our AI Answer Generator excels at handling complex and technical questions across various domains:</p>
+                                    <ul class="list-disc pl-5 space-y-2">
+                                        <li><strong>Technical depth:</strong> Powered by DeepSeek v3, the system can address advanced topics in programming, science, mathematics, and engineering with precision</li>
+                                        <li><strong>Code examples:</strong> For programming queries, it can generate properly formatted code snippets with syntax highlighting</li>
+                                        <li><strong>Multi-step problems:</strong> Complex questions requiring multiple steps of reasoning are broken down into clear, logical sequences</li>
+                                        <li><strong>Domain expertise:</strong> The system has strong knowledge across academic, professional, and technical fields</li>
+                                    </ul>
+                                    <p>Even for highly specialized topics, the AI provides structured, accessible explanations that balance technical accuracy with clarity for different expertise levels.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ 项目 4 -->
+                        <div class="mb-4 bg-white rounded-xl shadow-sm border border-[#e5e5e5] hover:shadow-md transition-all group">
+                            <button class="faq-toggle w-full text-left px-6 py-5 flex items-start justify-between" aria-expanded="false">
+                                <div class="flex items-start">
+                                    <div class="mt-1 mr-5 flex-shrink-0">
+                                        <div class="w-10 h-10 bg-[#f1f5fe] rounded-lg flex items-center justify-center shadow-sm">
+                                            <i class="fa-solid fa-tag text-[#007AFF]"></i>
+                                        </div>
+                                    </div>
+                                    <h3 class="text-xl font-semibold group-hover:text-[#007AFF] transition-colors">
+                                        Is the AI Answer Generator free to use?
+                                    </h3>
+                                </div>
+                                <i class="fa-solid fa-chevron-down text-[#007AFF] transform transition-transform"></i>
+                            </button>
+                            <div class="faq-content hidden px-6 pb-6 pl-[84px]">
+                                <div class="text-[#424245] space-y-3">
+                                    <p><span class="text-[#007AFF] font-medium">Yes, our AI Answer Generator is completely free to use.</span> We believe in providing accessible AI tools that empower everyone.</p>
+                                    <ul class="list-disc pl-5 space-y-2">
+                                        <li>No subscription fees or hidden costs</li>
+                                        <li>No usage limits or quotas</li>
+                                        <li>No account creation required</li>
+                                        <li>Full access to all features and capabilities</li>
+                                    </ul>
+                                    <p>We maintain this free service to democratize access to high-quality AI assistance. Everyone deserves access to powerful knowledge tools regardless of their financial situation.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ 项目 5 -->
+                        <div class="mb-4 bg-white rounded-xl shadow-sm border border-[#e5e5e5] hover:shadow-md transition-all group">
+                            <button class="faq-toggle w-full text-left px-6 py-5 flex items-start justify-between" aria-expanded="false">
+                                <div class="flex items-start">
+                                    <div class="mt-1 mr-5 flex-shrink-0">
+                                        <div class="w-10 h-10 bg-[#f1f5fe] rounded-lg flex items-center justify-center shadow-sm">
+                                            <i class="fa-solid fa-language text-[#007AFF]"></i>
+                                        </div>
+                                    </div>
+                                    <h3 class="text-xl font-semibold group-hover:text-[#007AFF] transition-colors">
+                                        Does the generator support queries in multiple languages?
+                                    </h3>
+                                </div>
+                                <i class="fa-solid fa-chevron-down text-[#007AFF] transform transition-transform"></i>
+                            </button>
+                            <div class="faq-content hidden px-6 pb-6 pl-[84px]">
+                                <div class="text-[#424245] space-y-3">
+                                    <p>Yes, our AI Answer Generator offers robust multilingual support:</p>
+                                    <ul class="list-disc pl-5 space-y-2">
+                                        <li>Ask questions in your preferred language</li>
+                                        <li>Receive answers in the same language with natural, fluent phrasing</li>
+                                        <li>Major languages supported include English, Chinese, Spanish, French, German, Japanese, Russian, Arabic, and many more</li>
+                                        <li>Consistent quality and formatting across all supported languages</li>
+                                    </ul>
+                                    <p>The system maintains the same high standards of clarity, structure, and accuracy regardless of the language used, making knowledge truly accessible across linguistic boundaries.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 底部 CTA -->
+                    <div class="mt-12 text-center">
+                        <p class="text-[#6e6e73] mb-6">Have more questions? Try asking our AI directly.</p>
+                        <a href="#generator-tool" class="btn-primary inline-flex items-center">
+                            <i class="fa-solid fa-arrow-up mr-2"></i> Go to AI Answer Generator
+                        </a>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="features" aria-labelledby="features-heading" class="mt-10">
+                <h3 id="features-heading" class="sr-only">Key Features</h3>
+                <div class="flex justify-center gap-8 opacity-70">
+                    <div class="quality-tag">
+                        <i class="fa-solid fa-wand-magic-sparkles text-primary mr-1"></i>
+                        <span>Intelligent Analysis</span>
+                    </div>
+                    <div class="quality-tag">
+                        <i class="fa-solid fa-shield-halved text-primary mr-1"></i>
+                        <span>Safe & Reliable</span>
+                    </div>
+                    <div class="quality-tag">
+                        <i class="fa-solid fa-bolt text-primary mr-1"></i>
+                        <span>Fast Response</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="relative z-10 py-6 border-t border-white/10 bg-white/5 backdrop-blur-sm mt-10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-sm text-[#86868b]">© 2024 AI Answer Generator. All rights reserved.</p>
+                </div>
+                <div class="flex gap-6">
+                    <a href="/privacy-policy/" class="text-sm text-[#86868b] hover:text-[#007AFF] transition-colors">Privacy Policy</a>
+                    <a href="/terms-of-service/" class="text-sm text-[#86868b] hover:text-[#007AFF] transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- AI Answer Generator Script -->
+    <script src="script.js"></script>
+</body>
+</html>
