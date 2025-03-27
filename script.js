@@ -67,7 +67,7 @@ function createLoadingAnimation() {
     return `
     <div class="flex flex-col items-center justify-center p-8 text-[#1d1d1f]">
         <div class="flex items-center gap-3 text-lg font-medium mb-4">
-            <i class="fa-solid fa-robot fa-bounce text-2xl text-[#007AFF]"></i>
+            <i class="fa-solid fa-brain fa-bounce text-2xl text-[#007AFF]"></i>
             <span>AI is thinking...</span>
         </div>
         <div class="flex gap-2">
