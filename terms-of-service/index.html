@@ -3,22 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0;url=../terms-of-service.html">
-    <meta name="robots" content="noindex,nofollow">
+    <meta name="robots" content="noindex,follow">
     <title>Terms of Service | AI Answer Generator</title>
+    <link rel="icon" href="../favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+    <link rel="apple-touch-icon" href="../favicon.png">
+    <link rel="mask-icon" href="../favicon.png" color="#007AFF">
+    <meta name="msapplication-TileImage" content="../favicon.png">
+    <meta name="msapplication-TileColor" content="#007AFF">
+    <meta name="theme-color" content="#007AFF">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../tailwind.config.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
-    <h1>Terms of Service</h1>
-        <p><i>Chaowen Tan</i> (hereinafter referred to as "we") provides the <i>AI Answer Generator</i> service to users (hereinafter referred to as "you") in accordance with this agreement. This agreement is legally binding for both you and us.</p>
-            <h4>1. Functions of the Service</h4>
-                <p>You can use this service AI Answer Generator.</p>
-            <h4>2. Scope and Limitations of Responsibility</h4>
-                <p>The results you obtain from using this service are for reference only. The official sources should be consulted for actual situations.</p>
-            <h4>3. Privacy Protection</h4>
-                <p>We value the protection of your privacy. Your personal privacy information will be protected and regulated according to the Privacy Policy. Please refer to the Privacy Policy for details.</p>
-            <h4>4. Other Terms</h4>
-                <p>4.1 The titles of all terms in this agreement are for reading convenience only and have no actual meaning themselves. They cannot be used as a basis for interpreting the meaning of this agreement.</p>
-                <p>4.2 If any part of the terms of this agreement becomes invalid or unenforceable for any reason, the remaining terms remain valid and binding on both parties.</p>
-    <p>Redirecting to <a href="../terms-of-service.html">Terms of Service</a>...</p>
+<body class="antialiased bg-[#f5f5f7] text-[#1d1d1f] min-h-screen flex flex-col relative">
+    <div class="gradient-circle fixed top-[-20%] left-[-10%] opacity-50"></div>
+    <div class="gradient-circle fixed bottom-[-30%] right-[-20%] opacity-60"></div>
+    
+    <div class="backdrop fixed inset-0 backdrop-blur-[80px] z-0"></div>
+    
+    <header class="relative z-10 w-full bg-white/10 backdrop-blur-md border-b border-white/20">
+        <div class="container mx-auto px-6 py-4">
+            <nav class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="ai-icon-small mr-3">
+                        <i class="fa-solid fa-brain text-white text-sm"></i>
+                    </div>
+                    <a href="/" class="font-semibold text-xl text-primary">AI Answer Generator</a>
+                </div>
+                
+                <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                    <a href="/" class="hover:text-[#007AFF] transition-colors">Home</a>
+                    <a href="/#generator-tool" class="hover:text-[#007AFF] transition-colors">Generator</a>
+                    <a href="/#how-to-guide" class="hover:text-[#007AFF] transition-colors">How-To Guide</a>
+                    <a href="/#use-cases" class="hover:text-[#007AFF] transition-colors">Use Cases</a>
+                    <a href="/#features-advantages" class="hover:text-[#007AFF] transition-colors">Features</a>
+                    <a href="/#why-choose-us" class="hover:text-[#007AFF] transition-colors">Why Choose Us</a>
+                    <a href="/#faq" class="hover:text-[#007AFF] transition-colors">FAQ</a>
+                </div>
+                
+                <div class="md:hidden">
+                    <button type="button" class="text-[#1d1d1f] hover:text-primary transition-colors" aria-label="Menu">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="flex-grow">
+        <div class="container relative z-10 mx-auto px-6 py-12 md:py-16 max-w-4xl">
+            <section class="mb-16">
+                <div class="text-center mb-14">
+                    <h1 class="text-gradient text-4xl md:text-5xl font-semibold tracking-tight mb-4">
+                        Terms of Service
+                    </h1>
+                    <p class="text-[#86868b] text-base md:text-lg max-w-2xl mx-auto">
+                        Last Updated: <span class="font-medium">March 27, 2025</span>
+                    </p>
+                </div>
+            </section>
+            
+            <section class="bg-white/90 backdrop-blur-md rounded-xl shadow-apple p-8 md:p-10 border border-white/30 mb-10">
+                <div class="prose prose-lg max-w-none">
+                    <p class="text-[#424245] mb-6">
+                        <i>Chaowen Tan</i> (hereinafter referred to as "we") provides the <i>AI Answer Generator</i> service to users (hereinafter referred to as "you") in accordance with this agreement. This agreement is legally binding for both you and us.
+                    </p>
+                    
+                    <h2 class="text-2xl font-semibold text-[#1d1d1f] mb-4 mt-8">1. Functions of the Service</h2>
+                    <p class="text-[#424245] mb-6">
+                        You can use this service AI Answer Generator to generate AI-powered responses to your questions. Our service utilizes advanced language models to provide accurate, structured, and helpful answers across a wide range of topics.
+                    </p>
+                    
+                    <h2 class="text-2xl font-semibold text-[#1d1d1f] mb-4 mt-8">2. Scope and Limitations of Responsibility</h2>
+                    <p class="text-[#424245] mb-6">
+                        The results you obtain from using this service are for reference only. Official sources should be consulted for actual situations. We strive to provide high-quality information but cannot guarantee the accuracy, completeness, or reliability of all generated content.
+                    </p>
+                    <p class="text-[#424245] mb-6">
+                        We are not responsible for any actions taken based on the information provided by our service. Users should exercise their own judgment and verify important information through official or authoritative sources before making decisions or taking actions based on the content generated by our service.
+                    </p>
+                    
+                    <h2 class="text-2xl font-semibold text-[#1d1d1f] mb-4 mt-8">3. Privacy Protection</h2>
+                    <p class="text-[#424245] mb-6">
+                        We value the protection of your privacy. Your personal privacy information will be protected and regulated according to our <a href="/privacy-policy" class="text-[#007AFF] hover:underline">Privacy Policy</a>. Please refer to the Privacy Policy for details about how we collect, use, and protect your information.
+                    </p>
+                    
+                    <h2 class="text-2xl font-semibold text-[#1d1d1f] mb-4 mt-8">4. Other Terms</h2>
+                    <h3 class="text-xl font-semibold text-[#1d1d1f] mb-3 mt-6">4.1 Title Interpretation</h3>
+                    <p class="text-[#424245] mb-6">
+                        The titles of all terms in this agreement are for reading convenience only and have no actual meaning themselves. They cannot be used as a basis for interpreting the meaning of this agreement.
+                    </p>
+                    
+                    <h3 class="text-xl font-semibold text-[#1d1d1f] mb-3 mt-6">4.2 Severability</h3>
+                    <p class="text-[#424245] mb-6">
+                        If any part of the terms of this agreement becomes invalid or unenforceable for any reason, the remaining terms remain valid and binding on both parties.
+                    </p>
+                    
+                    <h3 class="text-xl font-semibold text-[#1d1d1f] mb-3 mt-6">4.3 Changes to Terms</h3>
+                    <p class="text-[#424245] mb-6">
+                        We may update these Terms of Service from time to time. We will notify users of any significant changes. Your continued use of our service after such changes constitutes your acceptance of the new Terms of Service.
+                    </p>
+                    
+                    <h3 class="text-xl font-semibold text-[#1d1d1f] mb-3 mt-6">4.4 Governing Law</h3>
+                    <p class="text-[#424245] mb-6">
+                        These Terms of Service shall be governed by and construed in accordance with applicable laws, without regard to its conflict of law provisions.
+                    </p>
+                    
+                    <h3 class="text-xl font-semibold text-[#1d1d1f] mb-3 mt-6">4.5 Contact</h3>
+                    <p class="text-[#424245] mb-6">
+                        If you have any questions about these Terms of Service, please contact us at <a href="mailto:tanchaowen84@gmail.com" class="text-[#007AFF] hover:underline">tanchaowen84@gmail.com</a>.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="text-center">
+                <a href="/privacy-policy" class="btn-secondary inline-flex items-center mr-4">
+                    <i class="fa-solid fa-shield-halved mr-2"></i> Privacy Policy
+                </a>
+                <a href="/" class="btn-primary inline-flex items-center">
+                    <i class="fa-solid fa-house mr-2"></i> Return to Home
+                </a>
+            </section>
+        </div>
+    </main>
+
+    <footer class="relative z-10 py-6 border-t border-white/10 bg-white/5 backdrop-blur-sm mt-10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-sm text-[#86868b]">© 2024 AI Answer Generator. All rights reserved.</p>
+                    <p class="text-sm text-[#86868b] mt-2">Contact Us: <a href="mailto:tanchaowen84@gmail.com" class="hover:text-[#007AFF] transition-colors">tanchaowen84@gmail.com</a></p>
+                </div>
+                <div class="flex flex-col md:flex-row gap-6">
+                    <a href="/privacy-policy" class="text-sm text-[#86868b] hover:text-[#007AFF] transition-colors">Privacy Policy</a>
+                    <a href="/terms-of-service" class="text-sm text-[#86868b] hover:text-[#007AFF] transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html> 

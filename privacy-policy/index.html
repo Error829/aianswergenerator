@@ -3,126 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0;url=../privacy-policy.html">
-    <meta name="robots" content="noindex,nofollow">
+    <meta name="robots" content="noindex,follow">
     <title>Privacy Policy | AI Answer Generator</title>
+    <link rel="icon" href="../favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+    <link rel="apple-touch-icon" href="../favicon.png">
+    <link rel="mask-icon" href="../favicon.png" color="#007AFF">
+    <meta name="msapplication-TileImage" content="../favicon.png">
+    <meta name="msapplication-TileColor" content="#007AFF">
+    <meta name="theme-color" content="#007AFF">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../tailwind.config.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
-    <h1>Privacy Policy</h1>
-        <div>Last Updated: <strong>March 27, 2025</strong></div>
-        <div>Effective Date: <strong>March 27, 2025</strong></div>
-        <h2>Introduction</h2>
-        <p>
-        <i>AI Answer Generator</i> is a product provided by <i>Chaowen Tan</i> (hereinafter referred to as "we" or "us").
-        When you use our services, we may collect and use your relevant information. Through this Privacy Policy, we would like to explain how we collect, use, store, and share this information when you use our services, as well as the ways we provide for you to access, update, control, and protect this information.
-        This Privacy Policy is closely related to the <i>AI Answer Generator</i> service you use. We hope you read it carefully and, when necessary, make appropriate choices according to the guidance of this Privacy Policy. We have tried to express technical terms in this Privacy Policy in a concise manner and provide links for further explanation to facilitate your understanding.
-        </p>
-        <p><strong>Your use or continued use of our services means that you agree to our collection, use, storage, and sharing of your relevant information in accordance with this Privacy Policy.</strong></p>
-        <p>If you have any questions about this Privacy Policy or related matters, please contact us at <strong>tanchaowen84@gmail.com</strong>.</p>
-
-        <h2>1. Information We Collect</h2>
-        <p>When we or our third-party partners provide services, we may collect, store, and use the following information related to you. If you do not provide relevant information, you may not be able to register as our user or enjoy certain services we provide, or you may not achieve the intended effects of those services.</p>
-
-
+<body class="antialiased bg-[#f5f5f7] text-[#1d1d1f] min-h-screen flex flex-col relative">
+    <div class="gradient-circle fixed top-[-20%] left-[-10%] opacity-50"></div>
+    <div class="gradient-circle fixed bottom-[-30%] right-[-20%] opacity-60"></div>
+    
+    <div class="backdrop fixed inset-0 backdrop-blur-[80px] z-0"></div>
+    
+    <header class="relative z-10 w-full bg-white/10 backdrop-blur-md border-b border-white/20">
+        <div class="container mx-auto px-6 py-4">
+            <nav class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="ai-icon-small mr-3">
+                        <i class="fa-solid fa-brain text-white text-sm"></i>
+                    </div>
+                    <a href="/" class="font-semibold text-xl text-primary">AI Answer Generator</a>
+                </div>
+                
+                <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                    <a href="/" class="hover:text-[#007AFF] transition-colors">Home</a>
+                    <a href="/#generator-tool" class="hover:text-[#007AFF] transition-colors">Generator</a>
+                    <a href="/#how-to-guide" class="hover:text-[#007AFF] transition-colors">How-To Guide</a>
+                    <a href="/#use-cases" class="hover:text-[#007AFF] transition-colors">Use Cases</a>
+                    <a href="/#features-advantages" class="hover:text-[#007AFF] transition-colors">Features</a>
+                    <a href="/#why-choose-us" class="hover:text-[#007AFF] transition-colors">Why Choose Us</a>
+                    <a href="/#faq" class="hover:text-[#007AFF] transition-colors">FAQ</a>
+                </div>
+                
+                <div class="md:hidden">
+                    <button type="button" class="text-[#1d1d1f] hover:text-primary transition-colors" aria-label="Menu">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="flex-grow">
+        <div class="container relative z-10 mx-auto px-6 py-12 md:py-16 max-w-4xl">
+            <section class="mb-16">
+                <div class="text-center mb-14">
+                    <h1 class="text-gradient text-4xl md:text-5xl font-semibold tracking-tight mb-4">
+                        Privacy Policy
+                    </h1>
+                    <p class="text-[#86868b] text-base md:text-lg max-w-2xl mx-auto">
+                        Last Updated: <span class="font-medium">March 27, 2025</span> | Effective Date: <span class="font-medium">March 27, 2025</span>
+                    </p>
+                </div>
+            </section>
             
+            <section class="bg-white/90 backdrop-blur-md rounded-xl shadow-apple p-8 md:p-10 border border-white/30 mb-10">
+                <div class="prose prose-lg max-w-none">
+                    <h2 class="text-2xl font-semibold text-[#1d1d1f] mb-4">Introduction</h2>
+                    <p class="text-[#424245] mb-6">
+                        <i>AI Answer Generator</i> is a product provided by <i>Chaowen Tan</i> (hereinafter referred to as "we" or "us").
+                        When you use our services, we may collect and use your relevant information. Through this Privacy Policy, we would like to explain how we collect, use, store, and share this information when you use our services, as well as the ways we provide for you to access, update, control, and protect this information.
+                        This Privacy Policy is closely related to the <i>AI Answer Generator</i> service you use. We hope you read it carefully and, when necessary, make appropriate choices according to the guidance of this Privacy Policy. We have tried to express technical terms in this Privacy Policy in a concise manner and provide links for further explanation to facilitate your understanding.
+                    </p>
+                    <p class="text-[#424245] mb-6">
+                        <strong>Your use or continued use of our services means that you agree to our collection, use, storage, and sharing of your relevant information in accordance with this Privacy Policy.</strong>
+                    </p>
+                    <p class="text-[#424245] mb-6">
+                        If you have any questions about this Privacy Policy or related matters, please contact us at <strong>tanchaowen84@gmail.com</strong>.
+                    </p>
 
+                    <h2 class="text-2xl font-semibold text-[#1d1d1f] mb-4 mt-8">1. Information We Collect</h2>
+                    <p class="text-[#424245] mb-6">
+                        When we or our third-party partners provide services, we may collect, store, and use the following information related to you. If you do not provide relevant information, you may not be able to register as our user or enjoy certain services we provide, or you may not achieve the intended effects of those services.
+                    </p>
+                    <p class="text-[#424245] mb-4">Third-party SDKs we integrate:</p>
+                    <ul class="list-disc pl-5 space-y-2 mb-6 text-[#424245]">
+                        <li>
+                            <strong>deepseek v3</strong>
+                            <ul class="list-none pl-5 mt-2 space-y-1">
+                                <li><span class="font-medium">Third-party name:</span> openrouter</li>
+                                <li><span class="font-medium">Purpose of use:</span> provide AI service</li>
+                            </ul>
+                        </li>
+                    </ul>
 
-        <p>Third-party SDKs we integrate:</p>
-        <ul>
-        <li>deepseek v3<dl>
-            <dt>Third-party name:</dt><dd>openrouter</dd>
-            <dt>Purpose of use:</dt><dd>provide AI service</dd>
+                    <h2 class="text-2xl font-semibold text-[#1d1d1f] mb-4 mt-8">2. Information Storage</h2>
+                    
+                    <h3 class="text-xl font-semibold text-[#1d1d1f] mb-3 mt-6">2.1 Storage Methods and Duration</h3>
+                    <ul class="list-disc pl-5 space-y-2 mb-6 text-[#424245]">
+                        <li>We will store your information securely, including local storage (such as data caching via the app), databases, and server logs.</li>
+                        <li>In general, we will only store your personal information for the time necessary to fulfill the service purposes or under conditions specified by laws and regulations.</li>
+                    </ul>
+
+                    <h3 class="text-xl font-semibold text-[#1d1d1f] mb-3 mt-6">2.2 Storage Location</h3>
+                    <ul class="list-disc pl-5 space-y-2 mb-6 text-[#424245]">
+                        <li>In accordance with laws and regulations, we will store user personal information collected within China within the territory of China.</li>
+                        <li>Currently, we do not transfer or store your personal information across borders. If cross-border transfer or storage is needed in the future, we will inform you of the purpose of the information leaving the country, the recipient, security guarantee measures, and security risks, and obtain your consent.</li>
+                    </ul>
+
+                    <h3 class="text-xl font-semibold text-[#1d1d1f] mb-3 mt-6">2.3 Notification When Products or Services Cease to Operate</h3>
+                    <ul class="list-disc pl-5 space-y-2 mb-6 text-[#424245]">
+                        <li>When our products or services cease to operate, we will notify you in the form of push notifications, announcements, etc., and delete your personal information or anonymize it within a reasonable period, except as otherwise provided by laws and regulations.</li>
+                    </ul>
+
+                    <h2 class="text-2xl font-semibold text-[#1d1d1f] mb-4 mt-8">3. Information Security</h2>
+                    <p class="text-[#424245] mb-6">
+                        We use various security technologies and procedures to prevent loss, misuse, unauthorized access, or disclosure of information. For example, in some services, we will use encryption technology (such as SSL) to protect the personal information you provide. However, please understand that due to technical limitations and various malicious means that may exist, in the internet industry, it is impossible to always ensure 100% security of information even with maximum efforts to enhance security measures. You need to understand that the systems and communication networks you use to access our services may experience problems due to factors beyond our control.
+                    </p>
+
+                    <h2 class="text-2xl font-semibold text-[#1d1d1f] mb-4 mt-8">4. How We Use Information</h2>
+                    <p class="text-[#424245] mb-4">We may use the information collected in the process of providing services to you for the following purposes:</p>
+                    <ul class="list-disc pl-5 space-y-2 mb-6 text-[#424245]">
+                        <li>To provide services to you;</li>
+                        <li>For identity verification, customer service, security prevention, fraud detection, archiving, and backup purposes when we provide services, ensuring the security of the products and services we provide to you;</li>
+                        <li>To help us design new services and improve our existing services;</li>
+                        <li>To better understand how you access and use our services, thereby responding to your personalized needs, such as language settings, location settings, personalized help services and instructions, or other responses to you and other users;</li>
+                        <li>To provide you with more relevant advertisements instead of generally delivered advertisements;</li>
+                        <li>To evaluate and improve the effectiveness of advertisements and other promotional and promotional activities in our services;</li>
+                        <li>For software certification or management of software upgrades;</li>
+                        <li>To invite you to participate in surveys about our products and services.</li>
+                    </ul>
+
+                    <h2 class="text-2xl font-semibold text-[#1d1d1f] mb-4 mt-8">5. Information Sharing</h2>
+                    <p class="text-[#424245] mb-6">
+                        Currently, we do not actively share or transfer your personal information to third parties. If there are other instances of sharing or transferring your personal information, or if you need us to share or transfer your personal information to a third party, we will directly or confirm that the third party has obtained your explicit consent for such actions.
+                    </p>
+                    <p class="text-[#424245] mb-6">
+                        For purposes such as advertising placement and evaluating and optimizing advertising effectiveness, we need to share some of your data with advertisers and their agents and other third-party partners, requiring them to strictly comply with our measures and requirements regarding data privacy protection, including but not limited to processing data according to data protection agreements, commitments, and relevant data processing policies, avoiding identification of personal identity, and ensuring privacy security.
+                    </p>
+                    <p class="text-[#424245] mb-6">
+                        We will not share information that can be used to identify your personal identity (such as your name or email address) with partners unless you explicitly authorize us to do so.
+                    </p>
+                    <p class="text-[#424245] mb-6">
+                        We will not publicly disclose the personal information we collect. If disclosure is necessary, we will inform you of the purpose of this public disclosure, the type of information disclosed, and the sensitive information that may be involved, and obtain your explicit consent.
+                    </p>
+                    <p class="text-[#424245] mb-6">
+                        With the continuous development of our business, we may undergo mergers, acquisitions, asset transfers, and other transactions. We will inform you of the relevant circumstances and continue to protect your personal information in accordance with laws and regulations and standards no less than those required by this Privacy Policy, or require the new controller to continue to protect your personal information.
+                    </p>
+                    <p class="text-[#424245] mb-4">
+                        Additionally, in accordance with relevant laws, regulations, and national standards, in the following situations, we may share, transfer, or publicly disclose personal information without your prior authorization and consent:
+                    </p>
+                    <ul class="list-disc pl-5 space-y-2 mb-6 text-[#424245]">
+                        <li>Directly related to national security and national defense security;</li>
+                        <li>Directly related to public safety, public health, and major public interests;</li>
+                        <li>Directly related to criminal investigation, prosecution, trial, and judgment execution;</li>
+                        <li>For the purpose of protecting the life, property, and other significant legitimate rights and interests of the personal information subject or other individuals, but it is difficult to obtain the consent of the person;</li>
+                        <li>Personal information that is disclosed to the public by the personal information subject themselves;</li>
+                        <li>Personal information collected from legally disclosed information, such as legal news reports, government information disclosure, and other channels.</li>
+                    </ul>
+
+                    <h2 class="text-2xl font-semibold text-[#1d1d1f] mb-4 mt-8">6. Your Rights</h2>
+                    <p class="text-[#424245] mb-6">
+                        During your use of our services, we may provide corresponding operation settings based on the specific situation of the product, so that you can query, delete, correct, or withdraw your relevant personal information. You can refer to the specific guidelines for operation. In addition, we have also set up complaint and reporting channels, and your opinions will be dealt with promptly. If you are unable to exercise your rights as a subject of personal information through the above channels and methods, you can submit your request through the contact information provided in this Privacy Policy, and we will respond in accordance with the provisions of laws and regulations.
+                    </p>
+
+                    <h2 class="text-2xl font-semibold text-[#1d1d1f] mb-4 mt-8">7. Changes</h2>
+                    <p class="text-[#424245] mb-6">
+                        We may revise the terms of this Privacy Policy from time to time. When changes occur, we will prompt you with the new Privacy Policy when the version is updated and explain the effective date to you. Please read the content of the changed Privacy Policy carefully. <strong>If you continue to use our services, it means that you agree to our processing of your personal information in accordance with the updated Privacy Policy.</strong>
+                    </p>
+
+                    <h2 class="text-2xl font-semibold text-[#1d1d1f] mb-4 mt-8">8. Protection of Minors</h2>
+                    <p class="text-[#424245] mb-6">
+                        We encourage parents or guardians to guide minors under the age of eighteen to use our services. We recommend that minors encourage their parents or guardians to read this Privacy Policy and advise minors to seek the consent and guidance of their parents or guardians before submitting personal information.
+                    </p>
+                </div>
+            </section>
             
-            
-            
-        </dl></li>
-        
+            <section class="text-center">
+                <a href="/terms-of-service" class="btn-secondary inline-flex items-center mr-4">
+                    <i class="fa-solid fa-file-contract mr-2"></i> Terms of Service
+                </a>
+                <a href="/" class="btn-primary inline-flex items-center">
+                    <i class="fa-solid fa-house mr-2"></i> Return to Home
+                </a>
+            </section>
+        </div>
+    </main>
 
-
-        <h2>2. Information Storage</h2>
-        <strong>2.1 Storage Methods and Duration</strong>
-        <ul>
-            <li>We will store your information securely, including local storage (such as data caching via the app), databases, and server logs.</li>
-            <li>In general, we will only store your personal information for the time necessary to fulfill the service purposes or under conditions specified by laws and regulations.</li>
-        </ul>
-
-        <strong>2.2 Storage Location</strong>
-        <ul>
-            <li>In accordance with laws and regulations, we will store user personal information collected within China within the territory of China.</li>
-            <li>Currently, we do not transfer or store your personal information across borders. If cross-border transfer or storage is needed in the future, we will inform you of the purpose of the information leaving the country, the recipient, security guarantee measures, and security risks, and obtain your consent.</li>
-        </ul>
-
-        <strong>2.3 Notification When Products or Services Cease to Operate</strong>
-        <ul>
-            <li>When our products or services cease to operate, we will notify you in the form of push notifications, announcements, etc., and delete your personal information or anonymize it within a reasonable period, except as otherwise provided by laws and regulations.</li>
-        </ul>
-
-        <h2>3. Information Security</h2>
-        <p>
-            We use various security technologies and procedures to prevent loss, misuse, unauthorized access, or disclosure of information. For example, in some services, we will use encryption technology (such as SSL) to protect the personal information you provide. However, please understand that due to technical limitations and various malicious means that may exist, in the internet industry, it is impossible to always ensure 100% security of information even with maximum efforts to enhance security measures. You need to understand that the systems and communication networks you use to access our services may experience problems due to factors beyond our control.
-        </p>
-
-        <h2>4. How We Use Information</h2>
-        <p>We may use the information collected in the process of providing services to you for the following purposes:</p>
-        <ul>
-            <li>To provide services to you;</li>
-            <li>For identity verification, customer service, security prevention, fraud detection, archiving, and backup purposes when we provide services, ensuring the security of the products and services we provide to you;</li>
-            <li>To help us design new services and improve our existing services;</li>
-            <li>To better understand how you access and use our services, thereby responding to your personalized needs, such as language settings, location settings, personalized help services and instructions, or other responses to you and other users;</li>
-            <li>To provide you with more relevant advertisements instead of generally delivered advertisements;</li>
-            <li>To evaluate and improve the effectiveness of advertisements and other promotional and promotional activities in our services;</li>
-            <li>For software certification or management of software upgrades;</li>
-            <li>To invite you to participate in surveys about our products and services.</li>
-        </ul>
-
-        <h2>5. Information Sharing</h2>
-
-        <p>
-            Currently, we do not actively share or transfer your personal information to third parties. If there are other instances of sharing or transferring your personal information, or if you need us to share or transfer your personal information to a third party, we will directly or confirm that the third party has obtained your explicit consent for such actions.
-        </p>
-
-        <p>
-            For purposes such as advertising placement and evaluating and optimizing advertising effectiveness, we need to share some of your data with advertisers and their agents and other third-party partners, requiring them to strictly comply with our measures and requirements regarding data privacy protection, including but not limited to processing data according to data protection agreements, commitments, and relevant data processing policies, avoiding identification of personal identity, and ensuring privacy security.
-        </p>
-
-        <p>
-            We will not share information that can be used to identify your personal identity (such as your name or email address) with partners unless you explicitly authorize us to do so.
-        </p>
-
-        <p>
-            We will not publicly disclose the personal information we collect. If disclosure is necessary, we will inform you of the purpose of this public disclosure, the type of information disclosed, and the sensitive information that may be involved, and obtain your explicit consent.
-        </p>
-
-        <p>
-            With the continuous development of our business, we may undergo mergers, acquisitions, asset transfers, and other transactions. We will inform you of the relevant circumstances and continue to protect your personal information in accordance with laws and regulations and standards no less than those required by this Privacy Policy, or require the new controller to continue to protect your personal information.
-        </p>
-
-        <p>
-            Additionally, in accordance with relevant laws, regulations, and national standards, in the following situations, we may share, transfer, or publicly disclose personal information without your prior authorization and consent:
-        </p>
-        <ul>
-            <li>Directly related to national security and national defense security;</li>
-            <li>Directly related to public safety, public health, and major public interests;</li>
-            <li>Directly related to criminal investigation, prosecution, trial, and judgment execution;</li>
-            <li>For the purpose of protecting the life, property, and other significant legitimate rights and interests of the personal information subject or other individuals, but it is difficult to obtain the consent of the person;</li>
-            <li>Personal information that is disclosed to the public by the personal information subject themselves;</li>
-            <li>Personal information collected from legally disclosed information, such as legal news reports, government information disclosure, and other channels.</li>
-        </ul>
-
-        <h2>6. Your Rights</h2>
-        <p>
-            During your use of our services, we may provide corresponding operation settings based on the specific situation of the product, so that you can query, delete, correct, or withdraw your relevant personal information. You can refer to the specific guidelines for operation. In addition, we have also set up complaint and reporting channels, and your opinions will be dealt with promptly. If you are unable to exercise your rights as a subject of personal information through the above channels and methods, you can submit your request through the contact information provided in this Privacy Policy, and we will respond in accordance with the provisions of laws and regulations.
-        </p>
-
-        <h2>7. Changes</h2>
-        <p>
-            We may revise the terms of this Privacy Policy from time to time. When changes occur, we will prompt you with the new Privacy Policy when the version is updated and explain the effective date to you. Please read the content of the changed Privacy Policy carefully. <strong>If you continue to use our services, it means that you agree to our processing of your personal information in accordance with the updated Privacy Policy.</strong>
-        </p>
-
-        <h2>8. Protection of Minors</h2>
-        <p>
-            We encourage parents or guardians to guide minors under the age of eighteen to use our services. We recommend that minors encourage their parents or guardians to read this Privacy Policy and advise minors to seek the consent and guidance of their parents or guardians before submitting personal information.
-        </p>
-    <p>Redirecting to <a href="../privacy-policy.html">Privacy Policy</a>...</p>
+    <footer class="relative z-10 py-6 border-t border-white/10 bg-white/5 backdrop-blur-sm mt-10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-sm text-[#86868b]">© 2024 AI Answer Generator. All rights reserved.</p>
+                    <p class="text-sm text-[#86868b] mt-2">Contact Us: <a href="mailto:tanchaowen84@gmail.com" class="hover:text-[#007AFF] transition-colors">tanchaowen84@gmail.com</a></p>
+                </div>
+                <div class="flex flex-col md:flex-row gap-6">
+                    <a href="/privacy-policy" class="text-sm text-[#86868b] hover:text-[#007AFF] transition-colors">Privacy Policy</a>
+                    <a href="/terms-of-service" class="text-sm text-[#86868b] hover:text-[#007AFF] transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html> 
