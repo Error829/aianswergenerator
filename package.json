@@ -1,0 +1,21 @@
+{
+  "name": "ai-answer-generator",
+  "version": "1.0.0",
+  "description": "AI Answer Generator - 创建清晰、准确和结构化的AI回答",
+  "main": "index.html",
+  "scripts": {
+    "build": "node build.js",
+    "start": "node -e \"require('dotenv').config(); require('./build.js')\" && npx serve ."
+  },
+  "keywords": [
+    "ai",
+    "openrouter",
+    "answer-generator"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "dotenv": "^16.3.1",
+    "serve": "^14.2.1"
+  }
+} 

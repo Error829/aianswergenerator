@@ -1,4 +1,16 @@
-const API_KEY = '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';
+// 从环境变量中获取API密钥 - 使用合适的环境变量访问方式
+// 对于使用构建工具的项目，可以使用如下方式：
+// const API_KEY = import.meta.env.VITE_OPENROUTER_API_KEY || '';  // 如果使用Vite
+// const API_KEY = process.env.REACT_APP_OPENROUTER_API_KEY || ''; // 如果使用Create React App
+// 由于这是纯前端项目，我们提供一个更通用的方式：
+
+// 在实际部署时，您需要在服务器上设置这个环境变量
+// 而不是直接在此处硬编码
+const API_KEY = window.ENV_OPENROUTER_API_KEY || '';
+// 如果没有设置环境变量，给出警告
+if (!API_KEY) {
+  console.warn('警告: 未设置OPENROUTER_API_KEY环境变量');
+}
 const API_URL = 'https://openrouter.ai/api/v1/chat/completions';
 
 // Configure marked.js
