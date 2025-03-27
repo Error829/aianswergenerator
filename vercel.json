@@ -3,5 +3,17 @@
     { "source": "/privacy-policy", "destination": "/privacy-policy/index.html" },
     { "source": "/terms-of-service", "destination": "/terms-of-service/index.html" }
   ],
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/sitemap.xml/",
+      "destination": "/sitemap.xml",
+      "permanent": true
+    },
+    {
+      "source": "//sitemap.xml/",
+      "destination": "/sitemap.xml",
+      "permanent": true
+    }
+  ]
 } 
