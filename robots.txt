@@ -1,0 +1,15 @@
+# AI Answer Generator robots.txt
+User-agent: *
+Allow: /
+Allow: /privacy-policy
+Allow: /terms-of-service
+
+# 禁止爬取某些特定文件
+Disallow: /environment.js
+Disallow: /.env
+Disallow: /.env.local
+Disallow: /build.js
+Disallow: /.gitignore
+
+# Sitemap文件位置
+Sitemap: https://aianswergenerator.info/sitemap.xml 
